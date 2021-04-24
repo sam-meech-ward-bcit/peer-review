@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+  <title>Peer Review</title>
+</head>
+<body>
+
+  <div class="row">
+    <div class="col s6 criteria">
+  <h3>Criteria</h3>
+    <ul>
+      <li><strong>Quality:</strong> acquired new skills or knowledge if needed and completed tasks at the level of quality expected by the group</li>
+      <li><strong>Responsibility:</strong> delivered complete and accurate work in a timely manner Communication: communicates clearly, shares</li>
+      <li><strong>information </strong>and gives and receives feedback</li>
+      <li><strong>Contribution:</strong> Took fair share of technical tasks and helped with planning and organizing work</li>
+      <li><strong>Attitude:</strong> Projected professional, engaged, and enthusiastic attitude throughout the project.</li>
+    </ul>
+    </div>
+    <div class="col s6">
+      <h3>Scores</h3>
+      <p>List each team member and rate using the following scale:</p>
+      <ul>
+      <li>2 = Above average</li>
+      <li>1 = Average</li>
+      <li>0 = Below average</li>
+      </ul>
+</div>
+    </div>
+
+
+<div class="row">
+  <form class="col s12">
+    
+    <div class="row">
+      <div class="input-field col s4">
+        <input id="your_name" type="text">
+        <label for="your_name">Your Name</label>
+      </div>
+      <div class="input-field col s4">
+        <input id="student_id" type="text">
+        <label for="student_id">Student ID</label>
+      </div>
+      <div class="input-field col s4">
+        <input id="team_name" type="text">
+        <label for="team_name">Team Name</label>
+      </div>
+    </div>
+    <div id="form_rows"></div>
+    <div><a class="waves-effect waves-light btn-large" id="add_row">Add Team Member</a></div>
+    <br />
+    <div><button type="submit" class="waves-effect waves-light btn-large">Submit</button></div>
+  </form>
+</div>
+
+<script src="script.js" type="module"></script>
+</body>
+</html>
